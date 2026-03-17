@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Mary 💌</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SENHA -->
+<div id="login" class="screen active">
+  <h2>Digite a senha 💌</h2>
+  <input type="password" id="password">
+  <button onclick="checkPassword()">Entrar</button>
+  <p id="error"></p>
+</div>
+
+<!-- CAPA -->
+<div id="cover" class="screen">
+  <div class="capa">
+    <div class="laco">🎀</div>
+    <div class="foto"></div>
+    <p class="texto-capa">abre com carinho 💌</p>
+    <button onclick="abrirLivro()">Abrir</button>
+  </div>
+</div>
+
+<!-- LIVRO -->
+<div id="book" class="screen">
+
+  <!-- PÁGINAS FIXAS -->
+  <div class="page active">
+    <div class="linha-texto">
+Mary 🦇<br>
+Nesse último tempo conversando contigo...<br>
+eu me animo quando vejo tua mensagem.<br>
+É algo simples mas muito bom.<br>
+Você aparece do nada tipo Batman kkk.<br>
+Mas sempre melhora meu dia.<br>
+Eu gosto disso.<br>
+E gosto de falar contigo.
+    </div>
+    <span class="numero">1</span>
+  </div>
+
+  <div class="page">
+    <div class="linha-texto">
+Tudo entre a gente é leve.<br>
+Sem pressão, sem obrigação.<br>
+Só acontece.<br>
+E eu curto muito isso.<br>
+Porque é raro hoje em dia.<br>
+Algo simples assim.<br>
+Algo verdadeiro.<br>
+E eu valorizo isso.
+    </div>
+    <span class="numero">2</span>
+  </div>
+
+  <div class="page">
+    <div class="linha-texto">
+Eu até dou risada quando você some.<br>
+Mas também sinto falta rápido.<br>
+Porque tua presença é boa.<br>
+É leve.<br>
+É diferente.<br>
+E mesmo sendo recente...<br>
+já tem valor pra mim.<br>
+E isso é real.
+    </div>
+    <span class="numero">3</span>
+  </div>
+
+  <div class="page">
+    <div class="linha-texto">
+Eu tô ansioso pra te ver.<br>
+Pra gente se encontrar.<br>
+Sem pressa.<br>
+Só vivendo o momento.<br>
+Sendo nós mesmos.<br>
+E deixando acontecer.<br>
+Porque eu quero te conhecer mais.<br>
+De verdade.
+    </div>
+    <span class="numero">4</span>
+  </div>
+
+  <div class="page">
+    <div class="linha-texto">
+Próxima página em branco para podermos escrever nossa história juntos 💌
+    </div>
+    <span class="numero">5</span>
+  </div>
+
+  <!-- páginas editáveis -->
+  <div id="pages"></div>
+
+  <div class="controls">
+    <button id="prev">⬅️</button>
+    <button id="next">➡️</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
